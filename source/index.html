@@ -5,8 +5,45 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="" alt="Логотип Pink" width="75" height="22">
+      </p>
+      <button class="main-header__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <article class="application">
+        <p class="application__view">
+          <img class="application__view-image" src="" alt="Вид приложения Pink на смартфоне" width="498" height="314">
+        </p>
+        <div class="application__devices devices">
+          <button class="devices__button button">Скачать приложение</button>
+          <ul class="devices-list">
+            <li class="devices-list__item devices-list__item--apple">Apple</li>
+            <li class="devices-list__item devices-list__item--android">Android</li>
+            <li class="devices-list__item devices-list__item--winphone">Windows Phone</li>
+          </ul>
+          <p class="devices__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </article>
+    </header>
 
   </body>
 </html>
