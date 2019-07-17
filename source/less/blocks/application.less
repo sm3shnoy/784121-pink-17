@@ -1,0 +1,67 @@
+.application {
+  margin-top: -67px;
+  padding-top: 489px;
+
+  background:
+    url("../img/iphone-hand-mobile@1x.png") no-repeat 0 174px,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: #283645;
+}
+
+.application__devices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application__devices-button {
+  padding: 14px 35px 17px 36px;
+}
+
+.application__devices-list {
+  display: flex;
+  align-items: center;
+  margin: 32px 38px 22px;
+  padding: 0;
+}
+
+.application__devices-item {
+  display: inline-block;
+  margin-right: 35px;
+
+  vertical-align: middle;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url("../img/logo-apple.svg") no-repeat top center;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("../img/logo-android.svg") no-repeat top center;
+  }
+
+  &--winphone {
+    width: 44px;
+    height: 41px;
+    background: url("../img/logo-microsoft.svg") no-repeat top center;
+  }
+}
+
+
+
+.application__devices-text {
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+}
