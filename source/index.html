@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="http://placehold.it/75x22" alt="Логотип Pink" width="75" height="22">
+        <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -34,20 +34,25 @@
         <h1 class="visually-hidden">Pink - приложение, которое избавит вас от серых будней!</h1>
 
         <article class="application">
-          <h2 class="visually-hidden">Скачайте наше приложение, на своё мобильное устройство</h2>
-          <p class="application__view">
-            <img class="application__view-image" src="http://placehold.it/498x314" alt="Вид приложения Pink на смартфоне" width="498" height="314">
-          </p>
-          <div class="application__devices">
-            <button class="application__devices-button button">Скачать приложение</button>
-            <ul class="application__devices-list">
-              <li class="application__devices-item application__devices-item--apple">Apple</li>
-              <li class="application__devices-item application__devices-item--android">Android</li>
-              <li class="application__devices-item application__devices-item--winphone">Windows Phone</li>
-            </ul>
-            <p class="application__devices-text">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+          <div class="container">
+            <h2 class="visually-hidden">Скачайте наше приложение, на своё мобильное устройство</h2>
+            <div class="application__devices">
+              <button class="application__devices-button button">Скачать приложение</button>
+              <ul class="application__devices-list">
+                <li class="application__devices-item application__devices-item--apple">
+                  <span class="visually-hidden">Apple</span>
+                </li>
+                <li class="application__devices-item application__devices-item--android">
+                    <span class="visually-hidden">Android</span>
+                </li>
+                <li class="application__devices-item application__devices-item--winphone">
+                    <span class="visually-hidden">Windows Phone</span>
+                </li>
+              </ul>
+              <p class="application__devices-text">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
+            </div>
           </div>
         </article>
 
@@ -77,5 +82,6 @@
 
     </main>
 
+    <script src="js/main.js"></script>
   </body>
 </html>
