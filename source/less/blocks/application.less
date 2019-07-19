@@ -2,7 +2,7 @@
   background:
     url("../img/iphone-hand-mobile@1x.png") no-repeat 0 174px,
     url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-color: #283645;
+  background-color: @primaryColor;
 }
 
 .application__devices-item {
@@ -31,10 +31,9 @@
 }
 
 .application__devices-text {
-  margin: 0;
-  padding: 0;
+  .reset();
 
-  color: #ffffff;
+  color: @secondaryColor;
   font-weight: 300;
   text-align: center;
 }
