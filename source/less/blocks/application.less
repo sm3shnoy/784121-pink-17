@@ -1,0 +1,39 @@
+.application {
+  background:
+    url("../img/iphone-hand-mobile@1x.png") no-repeat 0 174px,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: @primaryColor;
+}
+
+.application__devices-item {
+  &:last-child {
+    margin-right: 0;
+  }
+
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url("../img/logo-apple.svg") no-repeat top center;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("../img/logo-android.svg") no-repeat top center;
+  }
+
+  &--winphone {
+    width: 44px;
+    height: 41px;
+    background: url("../img/logo-microsoft.svg") no-repeat top center;
+  }
+}
+
+.application__devices-text {
+  .reset();
+
+  color: @secondaryColor;
+  font-weight: 300;
+  text-align: center;
+}

@@ -2,15 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк - Фотографии</title>
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="http://placehold.it/75x22" alt="Логотип Pink" width="75" height="22">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -42,7 +43,7 @@
         <!-- Панорама -->
         <article class="gallery__photo photo">
           <p class="photo__panorama">
-            <img class="photo__image photo__image--panorama" src="http://placehold.it/320x137" alt="Панорама дня" width="320" height="137">
+            <img class="photo__image photo__image--panorama" src="../img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Анна</cite>
@@ -59,7 +60,7 @@
         <!-- Обычное фото -->
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Левон</cite>
@@ -75,7 +76,7 @@
         </article>
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Антон</cite>
@@ -91,7 +92,7 @@
         </article>
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Борис</cite>
@@ -107,7 +108,7 @@
         </article>
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Сергей</cite>
@@ -123,7 +124,7 @@
         </article>
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Максим</cite>
@@ -139,7 +140,7 @@
         </article>
         <article class="gallery__photo photo">
           <p class="photo__original">
-            <img class="photo__image" src="http://placehold.it/280x180" alt="Фотография нашего пользователя" width="280" height="180">
+            <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
           </p>
           <blockquote class="photo__caption">
             <cite class="photo__author">Надежда</cite>
@@ -153,37 +154,44 @@
             </div>
           </blockquote>
         </article>
+        <p class="gallery__caption">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
       </section>
 
     </main>
 
     <footer class="footer">
-      <p class="footer__logo">
-        <img class="footer__logo-image" src="http://placehold.it/147x40" alt="Логотип Пинк" width="147" height="40">
-      </p>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a href="social__item-link">
-            <img class="social__item-image" src="http://placehold.it/18x14" alt="Мы в Твиттере" width="18" height="14">
+      <div class="container">
+        <p class="footer__logo">
+          <img class="footer__logo-image" src="../img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="147" height="40">
+        </p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="social__item-link">
+              <img class="social__item-image" src="../img/icon-twitter.svg" alt="Мы в Твиттере" width="18" height="14">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="social__item-link">
+              <img class="social__item-image" src="../img/icon-facebook.svg" alt="Мы в Фейсбуке" width="9" height="18">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="social__item-link">
+              <img class="social__item-image" src="../img/icon-youtube.svg" alt="Мы на Ютюбе" width="15" height="13">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">Разработано</span>
+          <a href="#" class="footer__copyright-author">
+            <img class="footer__copyright-logo" src="../img/logo-htmlacademy.svg" alt="Разработано HTMLACADEMY" width="27" height="34">
           </a>
-        </li>
-        <li class="social__item">
-          <a href="social__item-link">
-            <img class="social__item-image" src="http://placehold.it/9x18" alt="Мы в Фейсбуке" width="9" height="18">
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="social__item-link">
-            <img class="social__item-image" src="http://placehold.it/15x13" alt="Мы на Ютюбе" width="15" height="13">
-          </a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="#" class="copyright__author">
-          <img class="copyright__author-logo" src="http://placehold.it/27x34" alt="Разработано HTMLACADEMY" width="27" height="34">
-        </a>
+        </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
