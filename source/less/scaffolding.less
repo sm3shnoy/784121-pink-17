@@ -47,6 +47,12 @@ a {
 }
 
 .container {
-  width: 100%;
+  width: auto;
   padding: 0 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    padding: 0 10px;
+  }
 }
