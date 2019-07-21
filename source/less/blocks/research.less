@@ -1,0 +1,57 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__container {
+    padding: 102px 36px 83px 329px;
+
+    background: url("../img/icon-timer.svg") no-repeat left center;
+  }
+
+  .research__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .research__text {
+    .reset();
+    margin: 20px 0;
+  }
+
+  .research__link {
+    color: #d22856;
+    border-bottom: 1px solid #d22856;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
+  .research__container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .research__title {
+    line-height: 30px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
