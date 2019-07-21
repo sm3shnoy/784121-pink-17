@@ -7,32 +7,34 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo">
-        <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__container">
+        <a href="index.html" class="header__logo">
+          <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
 
       <div class="main__page-title-wrap">
-        <h1 class="main__page-title">Фотографии пользователей</h1>
+        <h1 class="main__page-title">Фотографии<br>пользователей</h1>
       </div>
 
       <section class="gallery">
@@ -41,11 +43,11 @@
           Взгляните на Фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <!-- Панорама -->
-        <article class="gallery__photo photo">
+        <article class="gallery__panorama photo">
           <p class="photo__panorama">
             <img class="photo__image photo__image--panorama" src="../img/panorama-mobile@1x.jpg" alt="Панорама дня" width="320" height="137">
           </p>
-          <blockquote class="photo__caption">
+          <blockquote class="photo__caption photo__container">
             <cite class="photo__author">Анна</cite>
             <span class="photo__time">(5 минут назад)</span>
             <p class="photo__text">
@@ -57,103 +59,105 @@
             </div>
           </blockquote>
         </article>
-        <!-- Обычное фото -->
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Левон</cite>
-            <span class="photo__time">(5 часов назад)</span>
-            <p class="photo__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
+        <div class="gallery__container">
+          <!-- Обычное фото -->
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-car-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 356</span>
-            </div>
-          </blockquote>
-        </article>
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Антон</cite>
-            <span class="photo__time">(12 часов назад)</span>
-            <p class="photo__text">
-              Соседи будут рады!
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Левон</cite>
+              <span class="photo__time">(5 часов назад)</span>
+              <p class="photo__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 356</span>
+              </div>
+            </blockquote>
+          </article>
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 666</span>
-            </div>
-          </blockquote>
-        </article>
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Борис</cite>
-            <span class="photo__time">(20 часов назад)</span>
-            <p class="photo__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Антон</cite>
+              <span class="photo__time">(12 часов назад)</span>
+              <p class="photo__text">
+                Соседи будут рады!
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 666</span>
+              </div>
+            </blockquote>
+          </article>
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-fair-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 215</span>
-            </div>
-          </blockquote>
-        </article>
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Сергей</cite>
-            <span class="photo__time">(25 часов назад)</span>
-            <p class="photo__text">
-              Самая кубанская в мире
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Борис</cite>
+              <span class="photo__time">(20 часов назад)</span>
+              <p class="photo__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 215</span>
+              </div>
+            </blockquote>
+          </article>
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-pov-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 4</span>
-            </div>
-          </blockquote>
-        </article>
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Максим</cite>
-            <span class="photo__time">(40 часов назад)</span>
-            <p class="photo__text">
-              Где снего-то?
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Сергей</cite>
+              <span class="photo__time">(25 часов назад)</span>
+              <p class="photo__text">
+                Самая кубанская в мире
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 4</span>
+              </div>
+            </blockquote>
+          </article>
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-window-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 150</span>
-            </div>
-          </blockquote>
-        </article>
-        <article class="gallery__photo photo">
-          <p class="photo__original">
-            <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
-          </p>
-          <blockquote class="photo__caption">
-            <cite class="photo__author">Надежда</cite>
-            <span class="photo__time">(45 часов назад)</span>
-            <p class="photo__text">
-              Всем GM и взаимные лайки!
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Максим</cite>
+              <span class="photo__time">(40 часов назад)</span>
+              <p class="photo__text">
+                Где снего-то?
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 150</span>
+              </div>
+            </blockquote>
+          </article>
+          <article class="gallery__photo photo">
+            <p class="photo__original">
+              <img class="photo__image" src="../img/photo-wing-mobile@1x.jpg" alt="Фотография нашего пользователя" width="280" height="180">
             </p>
-            <div class="photo__likes">
-              <button class="photo__like-button photo__like-button--nolike">Лайк</button>
-              <span class="photo__like-counter">Нравится: 2560</span>
-            </div>
-          </blockquote>
-        </article>
+            <blockquote class="photo__caption">
+              <cite class="photo__author">Надежда</cite>
+              <span class="photo__time">(45 часов назад)</span>
+              <p class="photo__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="photo__likes">
+                <button class="photo__like-button photo__like-button--nolike">Лайк</button>
+                <span class="photo__like-counter">Нравится: 2560</span>
+              </div>
+            </blockquote>
+          </article>
+        </div>
         <p class="gallery__caption">
           Затмите их всех! Выкладывайте все, что накопилось в телефоне!
         </p>
@@ -162,7 +166,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container container">
         <p class="footer__logo">
           <img class="footer__logo-image" src="../img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" width="147" height="40">
         </p>
