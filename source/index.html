@@ -7,26 +7,28 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Html academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__container">
+        <a class="header__logo">
+          <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -37,6 +39,9 @@
           <div class="container">
             <h2 class="visually-hidden">Скачайте наше приложение, на своё мобильное устройство</h2>
             <div class="application__devices">
+              <b class="application__devices-title">
+                Взгляните на жизнь иначе!
+              </b>
               <button class="application__devices-button button">Скачать приложение</button>
               <ul class="application__devices-list">
                 <li class="application__devices-item application__devices-item--apple">
@@ -68,19 +73,29 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества приложения Pink</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--happy">
               <h3 class="advantages__item-title">Поднимает настроение</h3>
               <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--change-world">
               <h3 class="advantages__item-title">Меняет мир вокруг</h3>
               <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--new-friend">
               <h3 class="advantages__item-title">Заводит новых друзей</h3>
               <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="research">
+        <div class="research__container">
+          <b class="research__title">Эффект на 24 часа!</b>
+          <p class="research__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="research__link">Узнать больше об исследовании</a>
         </div>
       </section>
 

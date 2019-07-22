@@ -1,5 +1,7 @@
 .site-list {
   .resetList();
+  display: none;
+  flex-direction: column;
 
   &--open {
     display: flex;
@@ -22,5 +24,20 @@
     font-weight: 700;
     color: @secondaryColor;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-list__item {
+    box-shadow: unset;
+
+    a {
+      text-transform: unset;
+    }
   }
 }

@@ -1,12 +1,45 @@
 .main__page-title-wrap {
+  margin-top: -70px;
+
   background: @primaryColor url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
 }
 
 .main__page-title {
   .reset();
+  padding: 100px 20px 85px;
 
   font-size: 24px;
   color: @secondaryColor;
   text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .main__page-title-wrap {
+    margin-top: -110px;
+
+    background: @primaryColor url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
+
+  .main__page-title {
+    padding: 190px 20px 150px;
+
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main__page-title-wrap {
+    margin-top: -110px;
+
+    background: @primaryColor url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+  }
+
+  .main__page-title {
+    padding: 184px 10px 111px;
+
+    font-size: 50px;
+    line-height: 1;
+  }
 }
