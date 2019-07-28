@@ -8,13 +8,36 @@
   align-items: center;
 }
 
+.footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
 .footer__copyright-text {
+  display: inline-block;
+  margin: 19px 16px 0 0;
+
   line-height: 18px;
+}
+
+.footer__copyright-link {
+  margin-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .footer__container {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer__copyright-text {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer__copyright-text {
+    font-size: 18px;
   }
 }
