@@ -2,6 +2,14 @@
   width: 100%;
 }
 
+.main-nav--closed .site-list {
+  display: none;
+}
+
+.main-nav--opened .site-list {
+  display: block;
+}
+
 .main-nav__toggle {
   position: absolute;
   right: 20px;
@@ -15,29 +23,52 @@
 
   outline: none;
   border: none;
+}
 
-  &--open {
-    background: url("../img/icon-menu-burger.svg") no-repeat top center;
-  }
+.main-nav--closed .main-nav__toggle {
+  background: url("../img/icon-menu-burger.svg") no-repeat top center;
+}
 
-  &--close {
-    background: url("../img/icon-menu-cross.svg") no-repeat top center;
-  }
+.main-nav--opened .main-nav__toggle {
+  right: 21px;
+  top: 22px;
+
+  width: 24px;
+  height: 23px;
+
+  background: url("../img/icon-menu-cross.svg") no-repeat top center;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .site-list {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     top: 45px;
   }
+
+  .main-nav--opened .main-nav__toggle {
+    right: 21px;
+    top: 46px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 640px;
-    margin: 0 10px 0 auto;
+    width: 660px;
+    margin: 0 0 0 auto;
   }
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav .site-list {
+    display: flex;
   }
 }

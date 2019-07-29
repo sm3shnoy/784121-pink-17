@@ -1,3 +1,19 @@
+.photo__panorama {
+  .reset();
+  width: 100%;
+  display: flex;
+}
+
+.photo__caption {
+  .reset();
+  background-color: #f2f2f2;
+  padding: 18px 11px 21px 18px;
+}
+
+.photo__image {
+  width: 100%;
+}
+
 .photo__author {
   font-weight: 700;
 }
@@ -5,9 +21,122 @@
 .photo__time {
   font-weight: 300;
   font-size: 12px;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  .reset();
+}
+
+.photo__likes {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.photo__like-button {
+  width: 13px;
+  height: 12px;
+
+  font-size: 0;
+
+  background: url("../img/icon-heart.svg") no-repeat top center;
+  background-size: 100%;
+  outline: none;
+  border: none;
 }
 
 .photo__like-counter {
+  margin-left: 18px;
+
   font-size: 12px;
   color: #d22856;
+  text-transform: uppercase;
+}
+
+.photo__original {
+  .reset();
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  /* Обычные фото */
+  .photo__caption {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 24px 11px 21px 27px;
+  }
+
+  .photo__time {
+    margin-left: 4px;
+  }
+
+  .photo__text {
+    width: 100%;
+  }
+
+  .photo__likes {
+    flex-direction: row-reverse;
+    width: 100%;
+    align-self: flex-end;
+    margin-top: 12px;
+  }
+
+  .photo__like-button {
+    margin-right: 22px;
+  }
+
+  .photo__like-counter {
+    margin: 0 auto 0 0;
+  }
+
+  /* Панорама */
+  .photo__caption--panorama {
+    display: flex;
+    width: auto;
+    max-width: 1160px;
+    flex-wrap: wrap;
+    padding: 25px 11px 21px 26px;
+  }
+
+  .photo__time--panorama {
+    margin-left: 4px;
+  }
+
+  .photo__text--panorama {
+    order: 3;
+    width: auto;
+  }
+
+  .photo__likes--panorama {
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    order: 2;
+    margin: 0 19px 0 auto;
+  }
+
+  .photo__like-button--panorama {
+    margin: 0;
+  }
+
+  .photo__like-counter--panorama {
+    margin: 0 17px 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /* Обычные фото */
+
+  .photo__original {
+    height: 400px;
+  }
+
+  /* Панорама */
+
+  .photo__likes--panorama {
+    margin-right: 22px;
+  }
 }
