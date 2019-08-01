@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -9,7 +10,11 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo">
-          <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
+          <picture>
+            <source media="(min-width: 960px)" srcset="../img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+            <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
