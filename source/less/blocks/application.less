@@ -8,11 +8,19 @@
   height: 464px;
   margin-bottom: 22px;
 
-  background:
-    url("../img/iphone-hand-mobile@1x.png") no-repeat bottom center,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+  background-image:
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center, top center;
+  background-repeat: no-repeat;
   background-color: @primaryColor;
-  background-size: auto, cover;
+  background-size: 261px auto, cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image:
+      url("../img/iphone-hand-mobile@2x.png"),
+      url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .application__devices {
@@ -83,7 +91,7 @@
 
 @media (min-width: @tablet-width) {
   .application {
-    margin-top: -110px;
+    margin-top: -121px;
   }
 
   .application__wrapper {
@@ -95,9 +103,16 @@
     min-height: 727px;
     margin-bottom: 0;
 
-    background:
-      url("../img/iphone-hand-tablet@1x.png") no-repeat bottom center,
-      url("../img/bg-back-tablet@1x.jpg") no-repeat  top center;
+    background-image:
+      url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-tablet@2x.png"),
+        url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, cover;
+    }
   }
 
   .application__container {
@@ -136,9 +151,17 @@
   .application__header {
     min-height: 853px;
 
-    background:
-      url("../img/iphone-hand-desktop@1x.png") no-repeat bottom center,
-      url("../img/bg-back-desktop@1x.jpg") no-repeat  top center;
+    background-image:
+      url("../img/iphone-hand-desktop@1x.png"),
+      url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image:
+        url("../img/iphone-hand-desktop@2x.png"),
+        url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1050px auto, cover;
+      background-position: 5vw bottom, top center;
+    }
   }
 
   .application__wrapper {

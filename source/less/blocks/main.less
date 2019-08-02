@@ -1,7 +1,15 @@
 .main__page-title-wrap {
   margin-top: -70px;
 
-  background: @primaryColor url("../img/bg-back-mobile@1x.jpg") no-repeat top center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: @primaryColor;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .main__page-title {
@@ -17,9 +25,13 @@
 
 @media (min-width: @tablet-width) {
   .main__page-title-wrap {
-    margin-top: -110px;
+    margin-top: -121px;
 
-    background: @primaryColor url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .main__page-title {
@@ -32,9 +44,11 @@
 
 @media (min-width: @desktop-width) {
   .main__page-title-wrap {
-    margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
-    background: @primaryColor url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .main__page-title {
