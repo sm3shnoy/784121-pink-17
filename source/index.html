@@ -9,12 +9,16 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <a class="header__logo">
-          <picture>
-            <source media="(min-width: 960px)" srcset="../img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
-            <img class="header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink" width="75" height="22">
-          </picture>
+        <a class="header__logo" aria-label="Главная страница - Pink">
+          <svg class="header__logo-icon header__logo-icon--mobile" width="75" height="22" role="img">
+            <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="header__logo-icon header__logo-icon--tablet" width="147" height="40" role="img">
+            <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="header__logo-icon header__logo-icon--desktop" width="147" height="40" role="img">
+            <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -110,6 +114,7 @@
     </main>
 
     <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
