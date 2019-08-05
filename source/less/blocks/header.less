@@ -33,19 +33,25 @@
 
 .header__logo-icon {
   width: 75px;
-  height: auto;
+  height: 22px;
+  fill: #ffffff;
+}
 
-  &--mobile {
-    display: block;
-  }
+.header__logo-icon:hover {
+  fill: #d22856;
+}
 
-  &--tablet {
-    display: none;
-  }
+.header__logo-icon:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
 
-  &--desktop {
-    display: none;
-  }
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-desktop {
+  display: none;
 }
 
 
@@ -60,14 +66,11 @@
 
   .header__logo-icon {
     width: 147px;
+    height: 40px;
+  }
 
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+  .header__logo-tablet {
+    display: block;
   }
 }
 
@@ -90,13 +93,7 @@
     padding: 19px 0 36px 20px;
   }
 
-  .header__logo-icon {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+  .header__logo-desktop {
+    display: block;
   }
 }
