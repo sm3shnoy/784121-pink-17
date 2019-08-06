@@ -16,3 +16,7 @@ toggleMenu.addEventListener("click", function(evt) {
 
   mainHeader.classList.toggle("header--open");
 });
+
+window.onload = function() {
+  svg4everybody();
+}

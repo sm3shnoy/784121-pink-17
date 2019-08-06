@@ -5,18 +5,30 @@
 }
 
 .social__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 52px;
   margin-left: 15px;
-
-  border: 3px solid rgba(40, 54, 69, 0.1);
-  border-radius: 50%;
 
   &:first-child {
     margin-left: 0;
+  }
+}
+
+.social__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  fill: #d22856;
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

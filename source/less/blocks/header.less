@@ -31,11 +31,29 @@
   outline: none;
 }
 
-.header__logo img {
-  display: block;
+.header__logo-icon {
   width: 75px;
-  height: auto;
+  height: 22px;
+  fill: #ffffff;
 }
+
+.header__logo-icon:hover {
+  fill: #d22856;
+}
+
+.header__logo-icon:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.header__logo-tablet {
+  display: none;
+}
+
+.header__logo-desktop {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   .header {
@@ -46,8 +64,17 @@
     padding: 40px 0 40px 20px;
   }
 
-  .header__logo img {
+  .header__logo-icon {
     width: 147px;
+    height: 40px;
+  }
+
+  .header__logo-mobile {
+    display: none;
+  }
+
+  .header__logo-tablet {
+    display: block;
   }
 }
 
@@ -68,5 +95,9 @@
 
   .header__logo {
     padding: 19px 0 36px 20px;
+  }
+
+  .header__logo-desktop {
+    display: block;
   }
 }
