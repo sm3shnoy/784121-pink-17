@@ -23,6 +23,24 @@
   line-height: 30px;
 }
 
+.main__page-caption {
+  .reset();
+  max-width: 320px;
+  padding: 44px 20px 50px;
+  margin: 0 auto;
+
+  line-height: 30px;
+  text-align: center;
+
+  &--bottom {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main__page-title-wrap {
     margin-top: -121px;
@@ -40,6 +58,21 @@
     font-size: 50px;
     line-height: 60px;
   }
+
+  .main__page-caption {
+    max-width: 960px;
+    padding: 93px 50px 75px;
+
+    font-size: 18px;
+
+    &--bottom {
+      display: block;
+    }
+
+    span {
+      display: inline;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -56,5 +89,10 @@
 
     font-size: 50px;
     line-height: 61px;
+  }
+
+  .main__page-caption {
+    max-width: 1160px;
+    padding: 90px 160px;
   }
 }

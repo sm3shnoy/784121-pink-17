@@ -42,8 +42,91 @@
       <div class="main__page-title-wrap">
         <h1 class="main__page-title">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
       </div>
+      <p class="main__page-caption competitive-time">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span>Пожалуйста, заполните форму ниже:</span>
+      </p>
 
-      <!-- Здесь будет форма -->
+      <section class="competitive">
+        <form class="competitve__form main-form" action="">
+          <fieldset class="main-form__fieldset">
+            <p class="main-form__group">
+              <label class="main-form__label" for="surname">Фамилия:</label>
+              <input class="main-form__input" id="surname" type="text" placeholder="Укажите фамилию *">
+            </p>
+            <p class="main-form__group">
+              <label class="main-form__label" for="name">Имя:</label>
+              <input class="main-form__input" id="name" type="text" placeholder="Введите ваше имя *">
+            </p>
+            <p class="main-form__group">
+              <label class="main-form__label" for="patronymic">Отчество:</label>
+              <input class="main-form__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__fieldset-caption">Ваши безбашенные достижения в путешествии</legend>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="selfie" type="checkbox" name="selfie" value="selfie" checked>
+              <label class="main-form__switch-label" for="selfie">Сделал селфи с акулой</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="sunbathe" type="checkbox" name="sunbathe" value="sunbathe" checked>
+              <label class="main-form__switch-label" for="sunbathe">Обгорел на пляже</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="seeChack" type="checkbox" name="seeChack" value="seeChack">
+              <label class="main-form__switch-label" for="seeChack">Видел Чака Норриса</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="souvenir" type="checkbox" name="souvenir" value="souvenir">
+              <label class="main-form__switch-label" for="souvenir">Накупил сувениров</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="tower" type="checkbox" name="tower" value="tower" checked>
+              <label class="main-form__switch-label" for="tower">Удержал башню</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__checkbox" id="hotel" type="checkbox" name="hotel" value="hotel">
+              <label class="main-form__switch-label" for="hotel">Разгромил отель</label>
+            </p>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <p class="main-form__group">
+              <label class="main-form__label" for="surname">Номер телефона:</label>
+              <input class="main-form__input" id="surname" type="text" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="main-form__group">
+              <label class="main-form__label" for="name">Адрес почты:</label>
+              <input class="main-form__input" id="name" type="text" placeholder="Введите почту *">
+            </p>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__fieldset-caption">С каким приложением путешествовали?</legend>
+            <p class="main-form__switch-group">
+              <input class="main-form__radio" id="ios" type="radio" name="adventure" value="iOS" checked>
+              <label class="main-form__switch-label" for="ios">Pink для iOS</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__radio" id="android" type="radio" name="adventure" value="Android">
+              <label class="main-form__switch-label" for="android">Pink для Android</label>
+            </p>
+            <p class="main-form__switch-group">
+              <input class="main-form__radio" id="windows" type="radio" name="adventure" value="Windows">
+              <label class="main-form__switch-label" for="windows">Windows Phone</label>
+            </p>
+          </fieldset>
+          <fieldset class="main-form__fieldset">
+            <legend class="main-form__fieldset-caption">Опишите свои эмоции</legend>
+            <p class="main-form__switch-group">
+              <textarea class="main-form__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </fieldset>
+          <p class="main-form__send-group">
+            <button class="main-form__button" type="submit">Отправить форму</button>
+            <p class="main-form__note"><b class="main-form__note-important">*</b> — обязательные <span class="main-form__note-desktop">для заполнения</span> поля</p>
+          </p>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
