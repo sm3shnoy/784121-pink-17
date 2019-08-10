@@ -63,8 +63,8 @@
               <input class="main-form__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset">
-            <legend class="main-form__fieldset-caption">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="main-form__fieldset main-form__fieldset--other-indent">
+            <legend class="main-form__fieldset-caption main-form__fieldset-caption--absolute">Ваши безбашенные достижения в путешествии</legend>
             <p class="main-form__switch-group">
               <input class="main-form__checkbox" id="selfie" type="checkbox" name="selfie" value="selfie" checked>
               <label class="main-form__switch-label" for="selfie">Сделал селфи с акулой</label>
@@ -100,31 +100,33 @@
               <input class="main-form__input" id="name" type="text" placeholder="Введите почту *">
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset">
-            <legend class="main-form__fieldset-caption">С каким приложением путешествовали?</legend>
-            <p class="main-form__switch-group">
+          <fieldset class="main-form__fieldset main-form__fieldset--other-indent">
+            <legend class="main-form__fieldset-caption main-form__fieldset-caption--absolute">С каким приложением путешествовали?</legend>
+            <p class="main-form__switch-group main-form__radio-group">
               <input class="main-form__radio" id="ios" type="radio" name="adventure" value="iOS" checked>
               <label class="main-form__switch-label" for="ios">Pink для iOS</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__radio-group">
               <input class="main-form__radio" id="android" type="radio" name="adventure" value="Android">
               <label class="main-form__switch-label" for="android">Pink для Android</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__radio-group">
               <input class="main-form__radio" id="windows" type="radio" name="adventure" value="Windows">
               <label class="main-form__switch-label" for="windows">Windows Phone</label>
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset">
+          <fieldset class="main-form__fieldset main-form__last-fieldset">
             <legend class="main-form__fieldset-caption">Опишите свои эмоции</legend>
-            <p class="main-form__switch-group">
+            <p class="main-form__group main-form__group-last-group">
               <textarea class="main-form__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <p class="main-form__send-group">
+          <div class="main-form__send-group">
             <button class="main-form__button" type="submit">Отправить форму</button>
-            <p class="main-form__note"><b class="main-form__note-important">*</b> — обязательные <span class="main-form__note-desktop">для заполнения</span> поля</p>
-          </p>
+            <p class="main-form__note">
+              <b class="main-form__note-important">*</b> — обязательные <span class="main-form__note-desktop">для заполнения</span> поля
+            </p>
+          </div>
         </form>
       </section>
     </main>

@@ -4,6 +4,10 @@
   flex-direction: column;
   min-width: 276px;
   margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .main-form__label {
@@ -47,9 +51,20 @@
   .reset();
   max-width: 520px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0 auto 42px;
 
   border: none;
+
+  &:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+  &--other-indent {
+    position: relative;
+
+    padding: 67px 20px 43px;
+    margin-bottom: 32px;
+  }
 }
 
 .main-form__fieldset-caption {
@@ -57,11 +72,16 @@
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
+
+  &--absolute {
+    position: absolute;
+    top: 39px;
+  }
 }
 
 .main-form__switch-group {
   .reset();
-  margin-top: 26px;
+  margin-top: 47px;
 }
 
 // стилизация чекбоксов
@@ -94,6 +114,7 @@
   height: 39px;
 
   border: 2px solid #e5e5e5;
+  background-color: @secondaryColor;
 }
 
 .main-form__checkbox:checked + .main-form__switch-label::before {
@@ -103,7 +124,7 @@
   top: 0;
   left: 0;
 
-  background: url("../img/icon-yes.svg") no-repeat center;
+  background: #ffffff url("../img/icon-yes.svg") no-repeat center;
 }
 
 .main-form__checkbox:hover + .main-form__switch-label::before {
@@ -116,8 +137,20 @@
 
 // стилизация радио-кнопок
 
+.main-form__radio-group {
+  margin-top: 31px;
+
+  &:first-child {
+    margin-top: 41px;
+  }
+}
+
 .main-form__radio {
   display: none;
+}
+
+.main-form__radio-group .main-form__switch-label {
+  min-height: 44px;
 }
 
 .main-form__radio + .main-form__switch-label::before {
@@ -132,6 +165,7 @@
 
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  background-color: @secondaryColor;
 }
 
 .main-form__radio:checked + .main-form__switch-label::after {
@@ -144,13 +178,11 @@
   width: 15px;
   height: 15px;
 
-  margin-top: -6px;
+  margin-top: -10px;
 
   background-color: #d22856;
 
   border-radius: 50%;
-
-  // background: url("../img/icon-yes.svg") no-repeat center;
 }
 
 .main-form__radio:hover + .main-form__switch-label::before {
@@ -163,10 +195,18 @@
 
 /* ********** */
 
+.main-form__last-fieldset {
+  margin: 35px 0 48px;
+}
+
+.main-form__group-last-group {
+  margin-top: 18px;
+}
+
 .main-form__textarea {
   width: 100%;
-  height: 197px;
-  padding: 23px 19px;
+  height: 200px;
+  padding: 14px 19px;
 
   font: inherit;
   font-size: 18px;
@@ -188,13 +228,14 @@
 
 .main-form__button {
   max-width: 296px;
-  padding: 15px 50px;
+  padding: 15px 45px;
 
   font-size: 18px;
   line-height: 30px;
   color: @secondaryColor;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 700;
 
   background-color: #2aab6d;
   border: solid 2px #2aab6d;
@@ -211,6 +252,9 @@
 }
 
 .main-form__note {
+  .reset();
+  margin-top: 34px;
+
   line-height: 30px;
   text-align: center;
   color: @primaryColor;
