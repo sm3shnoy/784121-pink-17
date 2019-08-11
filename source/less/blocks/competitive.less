@@ -1,3 +1,71 @@
 .competitive {
   margin-bottom: 15px;
 }
+
+@media (min-width: @tablet-width) {
+  .competitive {
+    margin-bottom: 25px;
+  }
+
+  /* orders */
+
+  .competitive__form-person {
+    order: 0;
+  }
+
+  .competitive__form-selfie {
+    order: 3;
+  }
+
+  .competitive__form-contacts {
+    order: 2;
+  }
+
+  .competitive__form-app {
+    order: 1;
+  }
+
+  .competitive__form-comment {
+    order: 4;
+  }
+
+  .competitive__form-submit {
+    order: 5;
+  }
+
+  /* ******** */
+
+  .competitive__form-phone {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+    }
+  }
+
+  .competitive__form-email {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 60px;
+      height: 60px;
+
+      background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+    }
+  }
+}

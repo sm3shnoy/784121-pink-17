@@ -49,7 +49,7 @@
 
       <section class="competitive">
         <form class="competitve__form main-form" action="">
-          <fieldset class="main-form__fieldset">
+          <fieldset class="main-form__fieldset competitive__form-person">
             <p class="main-form__group">
               <label class="main-form__label" for="surname">Фамилия:</label>
               <input class="main-form__input" id="surname" type="text" placeholder="Укажите фамилию *">
@@ -63,44 +63,49 @@
               <input class="main-form__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset main-form__fieldset--other-indent">
+          <fieldset class="main-form__fieldset main-form__fieldset--other-indent competitive__form-selfie">
             <legend class="main-form__fieldset-caption main-form__fieldset-caption--absolute">Ваши безбашенные достижения в путешествии</legend>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--first">
               <input class="main-form__checkbox" id="selfie" type="checkbox" name="selfie" value="selfie" checked>
               <label class="main-form__switch-label" for="selfie">Сделал селфи с акулой</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group">
               <input class="main-form__checkbox" id="sunbathe" type="checkbox" name="sunbathe" value="sunbathe" checked>
               <label class="main-form__switch-label" for="sunbathe">Обгорел на пляже</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group">
               <input class="main-form__checkbox" id="seeChack" type="checkbox" name="seeChack" value="seeChack">
               <label class="main-form__switch-label" for="seeChack">Видел Чака Норриса</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group">
               <input class="main-form__checkbox" id="souvenir" type="checkbox" name="souvenir" value="souvenir">
               <label class="main-form__switch-label" for="souvenir">Накупил сувениров</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group">
               <input class="main-form__checkbox" id="tower" type="checkbox" name="tower" value="tower" checked>
               <label class="main-form__switch-label" for="tower">Удержал башню</label>
             </p>
-            <p class="main-form__switch-group">
+            <p class="main-form__switch-group main-form__checkbox-group">
               <input class="main-form__checkbox" id="hotel" type="checkbox" name="hotel" value="hotel">
               <label class="main-form__switch-label" for="hotel">Разгромил отель</label>
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset">
-            <p class="main-form__group">
-              <label class="main-form__label" for="surname">Номер телефона:</label>
-              <input class="main-form__input" id="surname" type="text" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="main-form__group">
-              <label class="main-form__label" for="name">Адрес почты:</label>
-              <input class="main-form__input" id="name" type="text" placeholder="Введите почту *">
-            </p>
+          <fieldset class="main-form__fieldset competitive__form-contacts">
+            <legend class="main-form__fieldset-caption main-form__fieldset-caption--no-mobile">Контактная информация</legend>
+            <div class="main-form__group main-form__group--caption-bottom">
+              <label class="main-form__label" for="phone">Номер телефона:</label>
+              <div class="main-form__input-wrap competitive__form-phone">
+                <input class="main-form__input" id="phone" type="text" placeholder="Номер, пожалуйста">
+              </div>
+            </div>
+            <div class="main-form__group main-form__group--caption-bottom">
+              <label class="main-form__label" for="email">Адрес почты:</label>
+              <div class="main-form__input-wrap competitive__form-email">
+                <input class="main-form__input" id="email" type="email" placeholder="Введите почту *">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="main-form__fieldset main-form__fieldset--other-indent">
+          <fieldset class="main-form__fieldset main-form__fieldset--other-indent competitive__form-app">
             <legend class="main-form__fieldset-caption main-form__fieldset-caption--absolute">С каким приложением путешествовали?</legend>
             <p class="main-form__switch-group main-form__radio-group">
               <input class="main-form__radio" id="ios" type="radio" name="adventure" value="iOS" checked>
@@ -115,13 +120,13 @@
               <label class="main-form__switch-label" for="windows">Windows Phone</label>
             </p>
           </fieldset>
-          <fieldset class="main-form__fieldset main-form__last-fieldset">
+          <fieldset class="main-form__fieldset main-form__last-fieldset competitive__form-comment">
             <legend class="main-form__fieldset-caption">Опишите свои эмоции</legend>
             <p class="main-form__group main-form__group-last-group">
               <textarea class="main-form__textarea" name="comment" id="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <div class="main-form__send-group">
+          <div class="main-form__send-group competitive__form-submit">
             <button class="main-form__button" type="submit">Отправить форму</button>
             <p class="main-form__note">
               <b class="main-form__note-important">*</b> — обязательные <span class="main-form__note-desktop">для заполнения</span> поля
