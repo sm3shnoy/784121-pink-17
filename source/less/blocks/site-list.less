@@ -41,15 +41,22 @@
   }
 
   .site-list__item {
-    box-shadow: unset;
-    border-top: unset;
+    margin-left: 80px;
+    padding: 0;
+
+    box-shadow: none;
+    border-top: none;
+
+    &:first-child {
+      margin-left: 20px;
+    }
 
     &:last-child {
-      box-shadow: unset;
+      box-shadow: none;
     }
 
     a {
-      text-transform: unset;
+      text-transform: none;
       font-weight: normal;
     }
   }
