@@ -13,7 +13,7 @@
 
     <header class="header">
       <div class="header__container">
-        <a class="header__logo" aria-label="Главная страница - Pink">
+        <a class="header__logo header__logo-main-page" aria-label="Главная страница - Pink">
           <svg class="header__logo-icon" role="img" width="147" height="40">
             <use xlink:href="#header-logo"></use>
           </svg>
@@ -53,14 +53,14 @@
                 </b>
                 <button class="application__devices-button button">Скачать приложение</button>
                 <ul class="application__devices-list">
-                  <li class="application__devices-item application__devices-item--apple">
-                    <span class="visually-hidden">Apple</span>
+                  <li class="application__devices-item">
+                    <a class="application__devices-link application__devices-link--apple" href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Apple</span></a>
                   </li>
-                  <li class="application__devices-item application__devices-item--android">
-                      <span class="visually-hidden">Android</span>
+                  <li class="application__devices-item">
+                    <a class="application__devices-link application__devices-link--android" href="https://play.google.com/store/apps?hl=ru"><span class="visually-hidden">Android</span></a>
                   </li>
-                  <li class="application__devices-item application__devices-item--winphone">
-                      <span class="visually-hidden">Windows Phone</span>
+                  <li class="application__devices-item">
+                    <a class="application__devices-link application__devices-link--winphone" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Windows Phone</span></a>
                   </li>
                 </ul>
                 <p class="application__devices-text">
@@ -100,6 +100,7 @@
       </section>
 
       <section class="research">
+        <h2 class="visually-hidden">Научные исследования приложения Pink</h2>
         <div class="research__container container">
           <b class="research__title">Эффект на 24 часа!</b>
           <p class="research__text">
@@ -107,6 +108,128 @@
           </p>
           <a href="#" class="research__link">Узнать больше об исследовании</a>
         </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о Pink</h2>
+        <div class="container">
+          <div class="slider">
+            <div class="reviews__slide">
+              <p class="reviews__author">
+                <b class="reviews__author-name">Николай Петров</b>
+                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+              </p>
+              <p class="reviews__author-text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </div>
+            <ul class="reviews__slider-controls slider__controls">
+              <li class="slider__controls-item slider__controls-item--active"><span class="visually-hidden">1</span></li>
+              <li class="slider__controls-item"><span class="visually-hidden">2</span></li>
+              <li class="slider__controls-item"><span class="visually-hidden">3</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="container">
+          <h2 class="visually-hidden">Стоимость приложениия Pink</h2>
+          <table class="price__table" aria-live="polite" aria-atomic="true">
+            <tr>
+              <th class="price__empty-cell"></th>
+              <th class="price__colhead" scope="col">
+                <span class="price__tarif">База</span>
+                <b class="price__value">1,99 USD</b>
+              </th>
+              <th class="price__colhead price__colhead--active price__colhead--hit" scope="col">
+                <span class="price__tarif">Стандарт</span>
+                <b class="price__value">3,99 USD</b>
+              </th>
+              <th class="price__colhead" scope="col">
+                <span class="price__tarif">Анлим</span>
+                <b class="price__value">9,99 USD</b>
+              </th>
+            </tr>
+            <tr>
+              <th class="price__rowhead"  scope="row">Розовый фильтр</th>
+              <td class="price__cell price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="price__cell price__cell--active price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="price__cell price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="price__rowhead" scope="row">Смайлики</th>
+              <td class="price__cell price__cell--no">
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="price__cell price__cell--active price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+              <td class="price__cell price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+            <tr>
+              <th class="price__rowhead" scope="row">Комментарии</th>
+              <td class="price__cell price__cell--no">
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="price__cell price__cell--active price__cell--no">
+                <span class="visually-hidden">Нет</span>
+              </td>
+              <td class="price__cell price__cell--yes">
+                <span class="visually-hidden">Есть</span>
+              </td>
+            </tr>
+          </table>
+          <ul class="price__slider-controls slider__controls">
+            <li class="slider__controls-item"><span class="visually-hidden">1</span></li>
+            <li class="slider__controls-item slider__controls-item--active"><span class="visually-hidden">2</span></li>
+            <li class="slider__controls-item"><span class="visually-hidden">3</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="container">
+          <p class="contacts__caption">
+            Остались вопросы?<br>
+            Свяжитесь с нами!
+          </p>
+          <address class="contacts__info">
+            <p class="contacts__info-text">
+              <b class="contacts__title">Звоните</b>
+              <a class="contacts__text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+            <p class="contacts__info-text">
+              <b class="contacts__title">Пишите</b>
+              <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts__info-text">
+              <b class="contacts__title">Приезжайте в гости:</b>
+              <span class="contacts__text">ул. Большая<br>конюшенная, 19/8</span>
+            </p>
+          </address>
+        </div>
+      </section>
+
+      <section class="map">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1028.5829517007962!2d30.321731336190616!3d59.938739546617164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565799119984!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <picture class="map__substrate">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="191186, Санкт-Петербург, Ул. Б. Конюшенная, д. 19/8" width="320" height="200">
+          </picture>
       </section>
 
     </main>

@@ -8,14 +8,40 @@
   }
 
   .research__container {
-    padding: 96px 19px 83px 329px;
+    position: relative;
+
+    padding: 96px 23px 83px 329px;
 
     background: url("../img/icon-timer.svg") no-repeat;
-    background-size: 238px auto;
-    background-position: left 22px top 57px;
+    background-size: 240px auto;
+    background-position: left 19px top 58px;
+
+    &::after {
+      content: "24";
+
+      position: absolute;
+      top: 114px;
+      left: 37px;
+
+      width: 204px;
+      height: 203px;
+
+      color: #d22856;
+      font-family: inherit;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 164px;
+      text-align: center;
+
+      border: 14px solid #d22856;
+      border-radius: 50%;
+    }
   }
 
   .research__title {
+    max-width: 209px;
+    display: inline-block;
+
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
