@@ -31,6 +31,10 @@
   margin-top: 32px;
 }
 
+.reviews__arrow-controls {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     margin-bottom: 4px;
@@ -63,5 +67,32 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews {
+    background: #ffffff url("../img/icon-quotes.svg") no-repeat top 74px center;
+  }
 
+  .reviews__slide {
+    max-width: 688px;
+    margin: 102px auto 0;
+  }
+
+  .reviews__author {
+    margin-top: 16px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
+
+  .reviews__slider-controls {
+    display: none;
+  }
+
+  .reviews__arrow-controls {
+    display: block;
+  }
 }
