@@ -21,11 +21,33 @@
 
 
   a {
+    display: inline-block;
+
     font-size: 18px;
-    line-height: 18px;
+    line-height: 35px;
     font-weight: 700;
     color: @secondaryColor;
     text-transform: uppercase;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active{
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-list__item-link--active {
+    border-bottom: 2px solid @secondaryColor;
+
+    &:hover {
+      color: @secondaryColor;
+    }
+
+    &:active {
+      color: @secondaryColor;
+    }
   }
 
   &:last-child {

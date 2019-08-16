@@ -5,7 +5,7 @@
 }
 
 .gallery__photo {
-  margin-top: 19px;
+  margin-top: 17.5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,9 +18,11 @@
 
   .gallery__photo {
     width: 300px;
+    min-height: 453px;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-top: 21px;
 
     &:nth-child(2n + 1) {
       margin-left: 0;
@@ -46,5 +48,10 @@
     &:nth-child(3n + 1) {
       margin-left: 0;
     }
+  }
+
+  .gallery__panorama {
+    max-width: 1160px;
+    margin: 0 auto;
   }
 }

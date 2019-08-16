@@ -24,8 +24,8 @@
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="photo.html">Фотографии</a>
+            <li class="site-list__item">
+              <a href="photo.html" class="site-list__item-link--active">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Конкурс</a>
@@ -41,10 +41,10 @@
     <main class="main">
 
       <div class="main__page-title-wrap">
-        <h1 class="main__page-title">Фотографии<br>пользователей</h1>
+        <h1 class="main__page-title main__photo-page-title">Фотографии<br>пользователей</h1>
       </div>
 
-      <p class="main__page-caption main__page-caption--top">
+      <p class="main__page-caption main__page-caption--top main__photo-page-caption">
         Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
 
@@ -52,7 +52,7 @@
         <h2 class="visually-hidden">Галерея</h2>
         <!-- Панорама -->
         <article class="gallery__panorama photo">
-          <p class="photo__panorama">
+          <a class="photo__panorama" href="#">
             <picture class="photo__picture">
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -61,7 +61,7 @@
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня" width="320" height="137">
             </picture>
-          </p>
+          </a>
           <div class="photo__container container">
             <blockquote class="photo__caption photo__caption--panorama">
               <cite class="photo__author photo__author--panorama">Анна</cite>
@@ -79,7 +79,7 @@
         <div class="gallery__container">
           <!-- Обычное фото -->
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -88,7 +88,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Левон</cite>
               <span class="photo__time">(5 часов назад)</span>
@@ -102,7 +102,7 @@
             </blockquote>
           </article>
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -111,7 +111,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Антон</cite>
               <span class="photo__time">(12 часов назад)</span>
@@ -125,7 +125,7 @@
             </blockquote>
           </article>
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -134,7 +134,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Борис</cite>
               <span class="photo__time">(20 часов назад)</span>
@@ -148,7 +148,7 @@
             </blockquote>
           </article>
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -157,7 +157,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Сергей</cite>
               <span class="photo__time">(25 часов назад)</span>
@@ -171,7 +171,7 @@
             </blockquote>
           </article>
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -180,7 +180,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Максим</cite>
               <span class="photo__time">(40 часов назад)</span>
@@ -194,7 +194,7 @@
             </blockquote>
           </article>
           <article class="gallery__photo photo">
-            <p class="photo__original">
+            <a class="photo__original" href="#">
               <picture class="photo__picture">
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -203,7 +203,7 @@
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фотография нашего пользователя" width="280" height="180">
               </picture>
-            </p>
+            </a>
             <blockquote class="photo__caption">
               <cite class="photo__author">Надежда</cite>
               <span class="photo__time">(45 часов назад)</span>
@@ -218,13 +218,73 @@
           </article>
         </div>
       </section>
-      <p class="main__page-caption main__page-caption--top">
+
+      <p class="main__page-caption main__page-caption--top main__photo-page-caption-bottom">
         Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
       </p>
 
+      <section class="editor">
+        <h2 class="visually-hidden">Онлайн-редактор фотографий</h2>
+        <div class="container editor__container">
+          <picture class="editor__photo">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__photo-image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография для редактирования" width="280" height="374">
+          </picture>
+          <div class="editor__settings">
+            <ul class="editor__controls">
+              <li class="editor__control-item">
+                <div class="editor__icon-wrap editor__icon-wrap-crop">
+                  <svg class="editor__icon editor__crop-icon editor__icon--active" role="img" width="44" height="44" viewbox="0 0 44 44">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </div>
+                <div class="editor__control editor__control--crop">
+                  <div class="editor__scale"></div>
+                  <div class="editor__control-toggle editor__control-toggle--crop"></div>
+                </div>
+              </li>
+              <li class="editor__control-item">
+                <div class="editor__icon-wrap editor__icon-wrap-fill">
+                  <svg class="editor__icon editor__fill-icon" role="img" width="48" height="43" viewbox="0 0 48 43">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </div>
+                <div class="editor__control editor__control--fill">
+                  <div class="editor__scale"></div>
+                  <div class="editor__control-toggle editor__control-toggle--fill"></div>
+                </div>
+              </li>
+              <li class="editor__control-item">
+                <div class="editor__icon-wrap editor__icon-wrap-contrast">
+                  <svg class="editor__icon editor__contrast-icon" role="img" width="32" height="32" viewbox="0 0 32 32">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </div>
+                <div class="editor__control editor__control--contrast">
+                  <div class="editor__scale"></div>
+                  <div class="editor__control-toggle editor__control-toggle--contrast"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="editor__control editor__control--mobile">
+              <div class="editor__scale"></div>
+              <div class="editor__control-toggle"></div>
+            </div>
+            <div class="editor__buttons">
+              <button class="editor__button editor__submit" type="button">Запостить</button>
+              <button class="editor__button editor__cancel" type="button">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer__photo">
       <div class="footer__container container">
         <a class="footer__logo" href="index.html">
           <svg class="footer__logo-icon">

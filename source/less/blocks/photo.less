@@ -4,6 +4,31 @@
   display: flex;
 }
 
+.photo__panorama {
+  position: relative;
+
+  &::after {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: 0;
+    right: 23px;
+
+    width: 140px;
+    height: 36px;
+    padding-top: 6px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #d22856;
+  }
+}
+
 .photo__picture {
   display: flex;
   width: 100%;
@@ -21,6 +46,7 @@
 
 .photo__author {
   font-weight: 700;
+  font-style: normal;
 }
 
 .photo__time {
@@ -40,8 +66,8 @@
 }
 
 .photo__like-button {
-  width: 13px;
-  height: 12px;
+  width: 15px;
+  height: 16px;
 
   font-size: 0;
 
@@ -98,6 +124,15 @@
   }
 
   /* Панорама */
+  .photo__panorama::after {
+    top: 57px;
+    right: 20px;
+  }
+
+  .photo__image--panorama {
+    height: 510px;
+  }
+
   .photo__caption--panorama {
     display: flex;
     width: auto;
@@ -144,6 +179,10 @@
   }
 
   /* Панорама */
+
+  .photo__image--panorama {
+    height: 506px;
+  }
 
   .photo__caption--panorama {
     min-height: auto;
