@@ -90,10 +90,6 @@
 
 // стилизация чекбоксов
 
-.main-form__checkbox {
-  display: none;
-}
-
 .main-form__switch-label {
   position: relative;
 
@@ -131,7 +127,8 @@
   background: #ffffff url("../img/icon-yes.svg") no-repeat center;
 }
 
-.main-form__checkbox:hover + .main-form__switch-label::before {
+.main-form__checkbox:hover + .main-form__switch-label::before,
+.main-form__checkbox:focus + .main-form__switch-label::before {
   border-color: @primaryColor;
 }
 
@@ -143,10 +140,6 @@
 
 .main-form__radio-group {
   margin-top: 34px;
-}
-
-.main-form__radio {
-  display: none;
 }
 
 .main-form__radio-group .main-form__switch-label {
@@ -185,7 +178,8 @@
   border-radius: 50%;
 }
 
-.main-form__radio:hover + .main-form__switch-label::before {
+.main-form__radio:hover + .main-form__switch-label::before,
+.main-form__radio:focus + .main-form__switch-label::before {
   border-color: @primaryColor;
 }
 
@@ -220,6 +214,19 @@
   &::placeholder {
     color: @primaryColor;
   }
+
+  &:hover {
+    border-color: @primaryColor;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: #d22856;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
 }
 
 .main-form__send-group {
@@ -250,6 +257,11 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
   }
 }
 

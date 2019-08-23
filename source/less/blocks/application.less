@@ -5,13 +5,14 @@
 
 .application__header {
   width: 100%;
-  height: 464px;
+  // height: 464px;
   margin-bottom: 22px;
+  padding-top: 466px;
 
   background-image:
     url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom center, top center;
+  background-position: right 19.375vw top 176px, top center;
   background-repeat: no-repeat;
   background-color: @primaryColor;
   background-size: 261px auto, cover;
@@ -21,6 +22,11 @@
       url("../img/iphone-hand-mobile@2x.png"),
       url("../img/bg-back-mobile@2x.jpg");
   }
+}
+
+.application__wrapper {
+  padding-top: 21px;
+  background-color: #283645;
 }
 
 .application__devices {
@@ -49,7 +55,7 @@
 .application__devices-list {
   display: flex;
   align-items: center;
-  margin: 32px 38px 22px;
+  margin: 32px 38px 17px;
   padding: 0;
 }
 
@@ -117,30 +123,26 @@
   }
 
   .application__wrapper {
-    position: relative;
+    background-color: transparent;
   }
 
   .application__header {
     height: 100%;
     min-height: 727px;
     margin-bottom: 0;
+    padding-top: 175px;
 
     background-image:
       url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-size: 700px auto, cover;
+    background-position: left -3.25vw bottom,top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image:
         url("../img/iphone-hand-tablet@2x.png"),
         url("../img/bg-back-tablet@2x.jpg");
     }
-  }
-
-  .application__container {
-    position: absolute;
-    bottom: 82px;
-    left: 0;
   }
 
   .application__devices {
@@ -171,13 +173,14 @@
 
 @media (min-width: @desktop-width) {
   .application__header {
-    min-height: 853px;
+    min-height: 852px;
+    padding-top: 210px;
 
     background-image:
       url("../img/iphone-hand-desktop@1x.png"),
       url("../img/bg-back-desktop@1x.jpg");
     background-size: 1050px auto, cover;
-    background-position: bottom, top center;
+    background-position: left 8vw bottom,top center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image:
@@ -189,7 +192,7 @@
   .application__wrapper {
     width: 960px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
   }
 
   .application__container {
@@ -198,7 +201,7 @@
   }
 
   .application__devices-list {
-    margin: 67px 38px 54px 35px;
+    margin: 67px 38px 48px 35px;
   }
 
   .application__devices-title {
