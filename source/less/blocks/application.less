@@ -1,5 +1,6 @@
 .application {
   margin-top: -70px;
+
   background-color: @primaryColor;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
@@ -16,46 +17,28 @@
   padding: 0;
 }
 
-.application__header {
-  width: 100%;
-  margin-bottom: 22px;
-  padding-top: 466px;
-
-  background-image:
-    url("../img/iphone-hand-mobile@1x.png");
-  background-position: right 19.375vw top 176px;
-  background-repeat: no-repeat;
-  // background-color: @primaryColor;
-  background-size: 261px auto;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
-  }
-}
-
 .application__wrapper {
   width: 100%;
-  background-color: #1d2631;
   padding: 28px 20px 29px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: #1d2631;
 }
 
 .application__devices {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 0 0 0;
+  padding: 465px 0 0 0;
   width: 100%;
   margin-bottom: 22px;
-  padding-top: 465px;
 
   background-image:
     url("../img/iphone-hand-mobile@1x.png");
   background-position: right 19.375vw top 176px;
   background-repeat: no-repeat;
-  // background-color: @primaryColor;
   background-size: 261px auto;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -67,15 +50,15 @@
   padding: 14px 35px 17px 36px;
 
   &:hover {
-    background-color: @secondaryColor;
-
     color: #d22856;
+
+    background-color: @secondaryColor;
   }
 
   &:active {
-    background-color: @secondaryColor;
-
     color: rgba(210, 40, 86, 0.3);
+
+    background-color: @secondaryColor;
   }
 }
 
@@ -105,18 +88,21 @@
   &--apple {
     width: 47px;
     height: 56px;
+
     background: url("../img/logo-apple.svg") no-repeat top center;
   }
 
   &--android {
     width: 43px;
     height: 47px;
+
     background: url("../img/logo-android.svg") no-repeat top center;
   }
 
   &--winphone {
     width: 44px;
     height: 41px;
+
     background: url("../img/logo-microsoft.svg") no-repeat top center;
   }
 
@@ -147,6 +133,7 @@
   .application {
     margin-top: -122px;
     padding-top: 13px;
+
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
 
@@ -181,10 +168,11 @@
     min-height: 727px;
     margin-bottom: 0;
     padding-top: 180px;
+    padding-right: 318px;
+
     background-image: url(../img/iphone-hand-tablet@1x.png);
     background-size: 700px auto;
     background-position: center bottom;
-    padding-right: 318px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
