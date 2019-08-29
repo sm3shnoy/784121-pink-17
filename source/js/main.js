@@ -3,6 +3,7 @@ var mainHeader = document.querySelector(".header");
 var navMain = document.querySelector(".main-nav");
 
 navMain.classList.remove("main-nav--nojs");
+mainHeader.classList.remove("header--nojs");
 
 toggleMenu.addEventListener("click", function(evt) {
   evt.preventDefault();

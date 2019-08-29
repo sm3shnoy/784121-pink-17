@@ -17,7 +17,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <header class="header">
+    <header class="header header--nojs">
       <div class="header__container">
         <a class="header__logo" href="index.html" aria-label="Главная страница - Pink">
           <svg class="header__logo-icon" role="img" width="147" height="40">
@@ -34,7 +34,7 @@
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link--active">Конкурс</a>
+              <a class="site-list__item-link site-list__item-link--active">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -55,17 +55,17 @@
 
       <section class="competitive">
         <h2 class="visually-hidden">Отправьте фотографию на конкурс</h2>
-        <form class="competitve__form main-form" action="https://echo.htmlacademy.ru/">
+        <form class="competitive__form main-form" action="https://echo.htmlacademy.ru/">
           <fieldset class="main-form__fieldset competitive__form-person">
-            <p class="main-form__group">
+            <p class="main-form__group main-form__group-person">
               <label class="main-form__label" for="surname">Фамилия:</label>
-              <input class="main-form__input" name="surname" id="surname" type="text" placeholder="Укажите фамилию *">
+              <input class="main-form__input" name="surname" id="surname" type="text" placeholder="Укажите фамилию *" required>
             </p>
-            <p class="main-form__group">
+            <p class="main-form__group main-form__group-person">
               <label class="main-form__label" for="name">Имя:</label>
-              <input class="main-form__input" name="name" id="name" type="text" placeholder="Введите ваше имя *">
+              <input class="main-form__input" name="name" id="name" type="text" placeholder="Введите ваше имя *" required>
             </p>
-            <p class="main-form__group">
+            <p class="main-form__group main-form__group-person">
               <label class="main-form__label" for="patronymic">Отчество:</label>
               <input class="main-form__input" name="patronymic" id="patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
@@ -77,23 +77,23 @@
                 <input class="main-form__checkbox visually-hidden" id="selfie" type="checkbox" name="selfie" value="selfie" checked>
                 <label class="main-form__switch-label" for="selfie">Сделал селфи с акулой</label>
               </p>
-              <p class="main-form__switch-group main-form__checkbox-group">
+              <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--two">
                 <input class="main-form__checkbox visually-hidden" id="sunbathe" type="checkbox" name="sunbathe" value="sunbathe" checked>
                 <label class="main-form__switch-label" for="sunbathe">Обгорел на пляже</label>
               </p>
-              <p class="main-form__switch-group main-form__checkbox-group">
+              <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--three">
                 <input class="main-form__checkbox visually-hidden" id="seeChack" type="checkbox" name="seeChack" value="seeChack">
                 <label class="main-form__switch-label" for="seeChack">Видел Чака Норриса</label>
               </p>
-              <p class="main-form__switch-group main-form__checkbox-group">
+              <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--four">
                 <input class="main-form__checkbox visually-hidden" id="souvenir" type="checkbox" name="souvenir" value="souvenir">
                 <label class="main-form__switch-label" for="souvenir">Накупил сувениров</label>
               </p>
-              <p class="main-form__switch-group main-form__checkbox-group">
+              <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--five">
                 <input class="main-form__checkbox visually-hidden" id="tower" type="checkbox" name="tower" value="tower" checked>
                 <label class="main-form__switch-label" for="tower">Удержал башню</label>
               </p>
-              <p class="main-form__switch-group main-form__checkbox-group">
+              <p class="main-form__switch-group main-form__checkbox-group main-form__checkbox-group--six">
                 <input class="main-form__checkbox visually-hidden" id="hotel" type="checkbox" name="hotel" value="hotel">
                 <label class="main-form__switch-label" for="hotel">Разгромил отель</label>
               </p>
@@ -105,13 +105,13 @@
               <div class="main-form__group main-form__group--caption-bottom">
                 <label class="main-form__label" for="phone">Номер телефона:</label>
                 <div class="main-form__input-wrap competitive__form-phone">
-                  <input class="main-form__input" name="phone" id="phone" type="tel" placeholder="Номер, пожалуйста">
+                  <input class="main-form__input" name="phone" id="phone" type="tel" placeholder="Номер, пожалуйста" pattern="[+7]{2}[0-9]{3}[0-9]{3}[0-9]{4}">
                 </div>
               </div>
               <div class="main-form__group main-form__group--caption-bottom">
                 <label class="main-form__label" for="email">Адрес почты:</label>
                 <div class="main-form__input-wrap competitive__form-email">
-                  <input class="main-form__input" name="email" id="email" type="email" placeholder="Введите почту *">
+                  <input class="main-form__input" name="email" id="email" type="email" placeholder="Введите почту *" required>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@
       </div>
     </footer>
 
-    <div class="modal__message modal__message-ok">
+    <div class="modal modal-message-ok">
       <div class="modal__message-wrap">
         <b class="modal__message-title">Ваша заявка отправлена</b>
         <p class="modal__message-text">
@@ -199,7 +199,7 @@
         <button class="modal__message-button" type="button">Закрыть окно</button>
       </p>
     </div>
-    <div class="modal__message modal__message-error">
+    <div class="modal modal-message-error">
       <div class="modal__message-wrap">
         <b class="modal__message-title">Что-то пошло не так!</b>
         <p class="modal__message-text">
